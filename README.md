@@ -16,7 +16,7 @@ Please make appropriate changes to your environment before applying the manifest
   - "loadBalancerIP" and "ROOT_URL" of rocketchat-app-loadbalancer.yaml  
 
 In either case, please chanege the namespaces of rocketchat-app deployment and mongo-rsinit job as follows.  
-  - rocketchat-db-0.rocketchat-db.*$YOUR_NAMESPACE*.svc.cluster.local**
+`rocketchat-db-0.rocketchat-db.*$YOUR_NAMESPACE*.svc.cluster.local`
   
 ## Note
 - The number of replicas of mongodb is limited to 1.  
