@@ -63,5 +63,5 @@ spec:
         - "/bin/bash"
         - "-c"
         - sleep 10 ;echo "rs.initiate()">init.js ; mongo --host rocketchat-db-0.rocketchat-db.default.svc.cluster.local:27017 init.js
-      restartPolicy: Never
+      restartPolicy: OnFailure
   backoffLimit: 6
