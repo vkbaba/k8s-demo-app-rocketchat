@@ -18,7 +18,7 @@ Please make appropriate changes to your environment before applying the manifest
 In either case, please chanege the namespaces of rocketchat-app deployment and mongo-rsinit job as follows.  
 rocketchat-db-0.rocketchat-db.*$YOUR_NAMESPACE*.svc.cluster.local
   
-# Note
+## Note
 - The number of replicas of mongodb is limited to 1.  
 - mongo-rsinit job executes mongo rs.initiate() command to the mongodb deployment from outside.  
 It's a lillte bit tricky so if you know a better way please reach out to me.  
