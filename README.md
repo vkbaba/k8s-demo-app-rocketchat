@@ -12,8 +12,8 @@ You access to the worker node where the rocketchat app Pod is running, with node
 - **rocketchat-app-loadbalancer.yaml & rocketchat-db-pvc.yaml**  
 If your cluster supports dynamic volume provisioning and loadbalancer services, you use these manifests.  
 Please make appropriate changes to your environment before applying the manifests.  
-  - "storageClassame" of rocketchat-db-pvc.yaml  
-  - "loadBalancerIP" and "ROOT_URL" of rocketchat-app-loadbalancer.yaml  
+  - "storageClassame" in rocketchat-db-pvc.yaml  
+  - "loadBalancerIP" and "ROOT_URL" in rocketchat-app-loadbalancer.yaml  
 
 In either case, please chanege the namespaces of rocketchat-app deployment and mongo-rsinit job as follows.  
 `rocketchat-db-0.rocketchat-db.*$YOUR_NAMESPACE*.svc.cluster.local`
